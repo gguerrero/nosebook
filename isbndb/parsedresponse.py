@@ -39,3 +39,4 @@ class ParsedResponse:
   def errormessage(self):
     ''' Error message in case it exist '''
     # return self.body['error']
+    # return self.body.find('error').text
