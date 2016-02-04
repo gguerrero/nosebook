@@ -13,14 +13,9 @@ All the services for retriving data from the ISBNdb repository are coded under t
 There are ```ISBNDB_HOSTNAME``` and ```ISBNDB_APIKEY```. These vars have default values.
 
 ## Unit Testing
-For running test just run this command (Python3 or more is required):
+To run the tests:
 
 ```bash
-python3.4 $(find tests -type f)
-```
-
-Or if you want to run indivual files as:
-
-```bash
-python3.4 tests/isbndb/baseservice_test.py
+python3.4 tests/isbndb_baseservice_test.py
+python3.4 tests/isbndb_services_books_test.py
 ```
