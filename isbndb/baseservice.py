@@ -1,4 +1,5 @@
 import isbndb
+import urllib.parse
 from   http.client import HTTPConnection
 
 class BaseService(HTTPConnection):
@@ -15,5 +16,5 @@ class BaseService(HTTPConnection):
     querystring = "?"
     for key in params:
       if params[key]:
-        querystring += "%s=%s&" % (key, params[key])
+        querystring += "%s=%s&" % (key, urllib.parse.quote(params[key]))
     return querystring[:-1]

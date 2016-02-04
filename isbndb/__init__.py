@@ -4,12 +4,7 @@ import os
 __all__  = [
   "baseservice",
   "parsedresponse",
-  "services.authors",
-  "services.books",
-  "services.categories",
-  "services.prices",
-  "services.publishers",
-  "services.subjests"
+  "services"
 ]
 
 # Constants, maybe used with ENV vars

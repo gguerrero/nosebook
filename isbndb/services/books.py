@@ -8,7 +8,7 @@ class Books(BaseService):
     BaseService.__init__(self)
     
   def getbook(self, book_isbn_or_slug, optparams = {}):
-    url = self.basepath()+"/book/"+str(book_isbn_or_slug)+cgiparams(optparams)
+    url = self.basepath()+"/book/"+str(book_isbn_or_slug)+self.cgiparams(optparams)
     self.request("GET", url)
     return ParsedResponse(self.getresponse(), self.format)
 
